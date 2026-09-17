@@ -1,103 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Devi Sri's learning blog — aptitude topics learned during Day 1 and Day 2.">
-  <title>Learning Blog | Devi Sri Kagga</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Learning Blog | Devi Sri Kagga</title><link rel="stylesheet" href="style.css">
   <style>
-    .blog-hero{padding:90px 7% 65px;background:radial-gradient(circle at 80% 25%,#103b2b 0,transparent 35%);border-bottom:1px solid #183129}.blog-hero h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.95;letter-spacing:-.07em;margin:15px 0}.blog-hero h1 span{color:#49e39a}.blog-hero p{max-width:760px;color:#a7b8b0;font-size:1.05rem}.back-link{display:inline-block;color:#49e39a;font-weight:700;margin-bottom:20px}.day{padding:75px 7%;border-bottom:1px solid #183129}.day-heading{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:35px}.day-heading h2{font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-.05em}.day-heading p{color:#71857b}.topic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.topic-card{padding:28px;border:1px solid #1c3a30;border-radius:12px;background:#0a1712}.topic-number{color:#49e39a;font-size:.75rem;font-weight:800;letter-spacing:.12em}.topic-card h3{margin:10px 0 10px;font-size:1.35rem}.topic-card p{color:#91a59c;margin-bottom:16px}.formula{padding:15px 17px;margin:14px 0;background:#07100d;border-left:3px solid #49e39a;border-radius:6px;color:#dcebe4;font-family:Consolas,monospace;font-size:.9rem;overflow-x:auto}.tip{color:#b7c9c0;font-size:.9rem}.learned{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.learned span{padding:6px 10px;border:1px solid #254b3d;border-radius:999px;font-size:.78rem;color:#b7c9c0}.reflection{padding:75px 7%;text-align:center;background:#091611}.reflection h2{font-size:clamp(2rem,4vw,3.4rem);margin-bottom:15px}.reflection p{max-width:700px;margin:auto;color:#91a59c}.reflection .actions{justify-content:center}.blog-footer{display:flex;justify-content:space-between;padding:25px 7%;color:#71857b;font-size:.85rem}.blog-footer a{color:#49e39a}@media(max-width:700px){.topic-grid{grid-template-columns:1fr}.day-heading{display:block}.day-heading p{margin-top:8px}.blog-hero,.day,.reflection{padding-left:5%;padding-right:5%}.blog-footer{padding-left:5%;padding-right:5%}}
+    .blog-hero{padding:90px 7% 65px;background:radial-gradient(circle at 80% 25%,#103b2b 0,transparent 35%);border-bottom:1px solid #183129}.blog-hero h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.95;letter-spacing:-.07em;margin:15px 0}.blog-hero h1 span{color:#49e39a}.blog-hero p{max-width:760px;color:#a7b8b0;font-size:1.05rem}.back-link{display:inline-block;color:#49e39a;font-weight:700;margin-bottom:20px}.day{padding:75px 7%;border-bottom:1px solid #183129}.day-heading{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:35px}.day-heading h2{font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-.05em}.day-heading p{color:#71857b}.topic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.topic-card{display:block;padding:28px;border:1px solid #1c3a30;border-radius:12px;background:#0a1712;color:inherit;text-decoration:none;transition:transform .2s ease,border-color .2s ease,background .2s ease}.topic-card:hover{transform:translateY(-5px);border-color:#49e39a;background:#0c1d16}.topic-number{color:#49e39a;font-size:.75rem;font-weight:800;letter-spacing:.12em}.topic-card h3{margin:10px 0;font-size:1.35rem}.topic-card p{color:#91a59c;margin-bottom:16px}.formula{padding:15px 17px;margin:14px 0;background:#07100d;border-left:3px solid #49e39a;border-radius:6px;color:#dcebe4;font-family:Consolas,monospace;font-size:.9rem;overflow-x:auto}.tip{color:#b7c9c0;font-size:.9rem}.learned{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.learned span{padding:6px 10px;border:1px solid #254b3d;border-radius:999px;font-size:.78rem;color:#b7c9c0}.open-note{display:block;color:#49e39a;font-size:.82rem;font-weight:700;margin-top:20px}.reflection{padding:75px 7%;text-align:center;background:#091611}.reflection h2{font-size:clamp(2rem,4vw,3.4rem);margin-bottom:15px}.reflection p{max-width:700px;margin:auto;color:#91a59c}.reflection .actions{justify-content:center}.blog-footer{display:flex;justify-content:space-between;padding:25px 7%;color:#71857b;font-size:.85rem}.blog-footer a{color:#49e39a}@media(max-width:700px){.topic-grid{grid-template-columns:1fr}.day-heading{display:block}.day-heading p{margin-top:8px}.blog-hero,.day,.reflection{padding-left:5%;padding-right:5%}.blog-footer{padding-left:5%;padding-right:5%}}
   </style>
 </head>
 <body>
-  <header class="navbar">
-    <a class="brand" href="index.html">DS<span>.</span></a>
-    <button class="menu-btn" aria-label="Toggle navigation">☰</button>
-    <nav id="nav"><a href="index.html#about">About</a><a href="index.html#skills">Skills</a><a href="index.html#projects">Projects</a><a href="blog.html">Learning Blog</a><a href="index.html#contact">Contact</a></nav>
-  </header>
-
+  <header class="navbar"><a class="brand" href="index.html">DS<span>.</span></a><button class="menu-btn" aria-label="Toggle navigation">☰</button><nav id="nav"><a href="index.html#about">About</a><a href="index.html#skills">Skills</a><a href="index.html#projects">Projects</a><a href="blog.html">Learning Blog</a><a href="index.html#contact">Contact</a></nav></header>
   <main>
-    <section class="blog-hero">
-      <a class="back-link" href="index.html">← Back to Portfolio</a>
-      <p class="eyebrow">MY LEARNING JOURNEY</p>
-      <h1>What I <span>learned.</span></h1>
-      <p>My placement-aptitude learning notes from Day 1 and Day 2 — definitions, important formulas, shortcuts and the problem types I practiced.</p>
-    </section>
-
-    <section class="day">
-      <div class="day-heading"><div><p class="section-label">DAY 01</p><h2>Numbers & Percentages</h2></div><p>Building the basics step by step.</p></div>
-      <div class="topic-grid">
-        <article class="topic-card">
-          <span class="topic-number">TOPIC 01</span><h3>Number System</h3>
-          <p>The number system deals with different types of numbers and the properties used to solve numerical problems quickly.</p>
-          <div class="formula"><strong>Divisibility:</strong><br>2 → last digit is even<br>3 → sum of digits is divisible by 3<br>5 → last digit is 0 or 5<br>9 → sum of digits is divisible by 9<br>10 → last digit is 0</div>
-          <div class="formula"><strong>Unit Digit:</strong> For powers, look at the repeating cycle of the last digit. Example: powers of 2 → 2, 4, 8, 6, then repeat.</div>
-          <div class="formula"><strong>LCM:</strong> Least Common Multiple — the smallest positive number divisible by all given numbers.<br><strong>HCF:</strong> Highest Common Factor — the greatest number that divides all given numbers.</div>
-          <div class="formula"><strong>Remainder theorem:</strong> If a number N is divided by d, then N = dq + r, where 0 ≤ r &lt; d.</div>
-          <p class="tip">💡 For fractions, compare values using a common denominator or cross multiplication when denominators are positive.</p>
-          <div class="learned"><span>Divisibility Rules</span><span>Unit Digit</span><span>Fractions</span><span>Remainder</span><span>LCM & HCF</span></div>
-        </article>
-
-        <article class="topic-card">
-          <span class="topic-number">TOPIC 02</span><h3>Percentage</h3>
-          <p>Percentage means a value expressed out of 100. It is widely used in income, population, election, price and consumption problems.</p>
-          <div class="formula">Percentage = (Part / Whole) × 100</div>
-          <div class="formula">New Value after x% increase = Original × (100 + x) / 100<br>New Value after x% decrease = Original × (100 − x) / 100</div>
-          <div class="formula"><strong>Population model:</strong> New Population = P × (1 ± r/100), depending on increase or decrease.</div>
-          <div class="formula"><strong>Election model:</strong> Difference in votes = (Difference in percentage / 100) × Total valid votes.</div>
-          <div class="formula"><strong>Price–consumption:</strong> If price increases by x% and expenditure stays constant, new consumption = old consumption × 100/(100+x).</div>
-          <p class="tip">💡 Always identify the original quantity before calculating a percentage change.</p>
-          <div class="learned"><span>Basic Percentage</span><span>Income</span><span>Population</span><span>Election</span><span>Price & Consumption</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="day">
-      <div class="day-heading"><div><p class="section-label">DAY 02</p><h2>Profit, Discount & Ratio</h2></div><p>Turning formulas into problem-solving skills.</p></div>
-      <div class="topic-grid">
-        <article class="topic-card">
-          <span class="topic-number">TOPIC 03</span><h3>Profit & Loss</h3>
-          <p><strong>CP</strong> is Cost Price and <strong>SP</strong> is Selling Price. Profit occurs when SP &gt; CP; loss occurs when CP &gt; SP.</p>
-          <div class="formula">Profit = SP − CP<br>Loss = CP − SP<br>Profit % = (Profit / CP) × 100<br>Loss % = (Loss / CP) × 100</div>
-          <div class="formula">SP at p% profit = CP × (100 + p)/100<br>SP at l% loss = CP × (100 − l)/100</div>
-          <div class="formula"><strong>Successive changes:</strong> Net % = a + b + (ab/100), using + for increase/profit and − for decrease/loss.</div>
-          <div class="formula"><strong>Same SP:</strong> If one item has x% profit and another has x% loss, the overall result is a loss of x²/100%.</div>
-          <p class="tip">💡 Profit and loss percentages are normally calculated on CP, not SP.</p>
-          <div class="learned"><span>CP & SP</span><span>Profit/Loss %</span><span>Successive Change</span><span>Same CP/SP</span><span>False Weight</span></div>
-        </article>
-
-        <article class="topic-card">
-          <span class="topic-number">TOPIC 04</span><h3>Discount</h3>
-          <p><strong>MP</strong> means Marked Price. Discount is the reduction given on the marked price.</p>
-          <div class="formula">Discount = MP − SP<br>Discount % = (Discount / MP) × 100<br>SP = MP × (100 − Discount%)/100</div>
-          <div class="formula"><strong>Successive discounts:</strong><br>Net Discount % = d₁ + d₂ − (d₁ × d₂)/100</div>
-          <div class="formula"><strong>Marked price & profit:</strong><br>MP/CP = (100 + Profit%) / (100 − Discount%)</div>
-          <p class="tip">💡 Discount percentage is calculated on MP, while profit/loss percentage is normally calculated on CP.</p>
-          <div class="learned"><span>SP, MP</span><span>Discount %</span><span>Successive Discount</span><span>MP & Profit</span></div>
-        </article>
-
-        <article class="topic-card">
-          <span class="topic-number">TOPIC 05</span><h3>Ratio & Proportion</h3>
-          <p>A ratio compares two quantities of the same kind. A proportion states that two ratios are equal.</p>
-          <div class="formula">Ratio a:b = a/b</div>
-          <div class="formula"><strong>Equivalent ratios:</strong> a:b = ka:kb, where k ≠ 0.</div>
-          <div class="formula"><strong>Unknown ratio:</strong> If x:y = a:b, then x = ka and y = kb for some common multiplier k.</div>
-          <div class="formula"><strong>Proportion:</strong> a:b = c:d ⟹ a/b = c/d ⟹ ad = bc.</div>
-          <p class="tip">💡 Keep the order of quantities the same when forming a ratio.</p>
-          <div class="learned"><span>Basic Ratio</span><span>Types of Ratio</span><span>Unknown Ratio</span><span>Proportion</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="reflection">
-      <p class="section-label">MY TAKEAWAY</p><h2>Learn → Practice → Improve.</h2>
-      <p>Day 1 helped me build my percentage and number-system foundation. Day 2 helped me apply percentages to profit, loss and discount, and then use ratios and proportions to solve related problems. I am continuing to practice these formulas to improve speed and accuracy.</p>
-      <div class="actions"><a class="btn primary" href="index.html">Back to Portfolio</a></div>
-    </section>
+    <section class="blog-hero"><a class="back-link" href="index.html">← Back to Portfolio</a><p class="eyebrow">MY LEARNING JOURNEY</p><h1>What I <span>learned.</span></h1><p>My placement-aptitude learning notes from Day 1 and Day 2 — definitions, important formulas, shortcuts and the problem types I practiced.</p></section>
+    <section class="day"><div class="day-heading"><div><p class="section-label">DAY 01</p><h2>Numbers & Percentages</h2></div><p>Building the basics step by step.</p></div><div class="topic-grid">
+      <a class="topic-card" href="number-system.html"><span class="topic-number">TOPIC 01</span><h3>Number System</h3><p>Divisibility, unit digits, fractions, remainder, LCM and HCF.</p><div class="learned"><span>Divisibility Rules</span><span>Unit Digit</span><span>Fractions</span><span>Remainder</span><span>LCM & HCF</span></div><span class="open-note">Open topic →</span></a>
+      <a class="topic-card" href="percentage.html"><span class="topic-number">TOPIC 02</span><h3>Percentage</h3><p>Percentage fundamentals and applications to income, population, elections and price-consumption models.</p><div class="learned"><span>Basic Percentage</span><span>Income</span><span>Population</span><span>Election</span><span>Price & Consumption</span></div><span class="open-note">Open topic →</span></a>
+    </div></section>
+    <section class="day"><div class="day-heading"><div><p class="section-label">DAY 02</p><h2>Profit, Discount & Ratio</h2></div><p>Turning formulas into problem-solving skills.</p></div><div class="topic-grid">
+      <a class="topic-card" href="profit-loss.html"><span class="topic-number">TOPIC 03</span><h3>Profit & Loss</h3><p>CP, SP, profit, loss, percentages, successive changes and common aptitude models.</p><div class="learned"><span>CP & SP</span><span>Profit/Loss %</span><span>Successive Change</span><span>Same CP/SP</span><span>False Weight</span></div><span class="open-note">Open topic →</span></a>
+      <a class="topic-card" href="discount.html"><span class="topic-number">TOPIC 04</span><h3>Discount</h3><p>Marked price, selling price, discount percentage, successive discounts and profit relation.</p><div class="learned"><span>SP, MP</span><span>Discount %</span><span>Successive Discount</span><span>MP & Profit</span></div><span class="open-note">Open topic →</span></a>
+      <a class="topic-card" href="ratio-proportion.html"><span class="topic-number">TOPIC 05</span><h3>Ratio & Proportion</h3><p>Basic ratios, equivalent ratios, unknown values and proportion relationships.</p><div class="learned"><span>Basic Ratio</span><span>Types of Ratio</span><span>Unknown Ratio</span><span>Proportion</span></div><span class="open-note">Open topic →</span></a>
+    </div></section>
+    <section class="reflection"><p class="section-label">MY TAKEAWAY</p><h2>Learn → Practice → Improve.</h2><p>Day 1 helped me build my percentage and number-system foundation. Day 2 helped me apply percentages to profit, loss and discount, and then use ratios and proportions to solve related problems.</p><div class="actions"><a class="btn primary" href="index.html">Back to Portfolio</a></div></section>
   </main>
-
-  <footer class="blog-footer"><p>© 2026 Devi Sri Kagga</p><a href="#top">Back to top ↑</a></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+  <footer class="blog-footer"><p>© 2026 Devi Sri Kagga</p><a href="#top">Back to top ↑</a></footer><script src="script.js"></script>
+</body></html>
