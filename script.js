@@ -34,3 +34,25 @@ const updateActiveLink=()=>{
 
 window.addEventListener('scroll',updateActiveLink,{passive:true});
 window.addEventListener('load',updateActiveLink);
+
+const certificateButtons=document.querySelectorAll('.certificate-image-btn');
+if(certificateButtons.length){
+  const modal=document.createElement('div');
+  modal.className='certificate-modal';
+  modal.hidden=true;
+  modal.innerHTML='<button class="certificate-modal-close" type="button" aria-label="Close certificate">×</button><img alt="Certificate preview">';
+  document.body.appendChild(modal);
+  const modalImage=modal.querySelector('img');
+  const closeModal=()=>{modal.hidden=true;document.body.style.overflow='';};
+  certificateButtons.forEach(button=>{
+    button.addEventListener('click',()=>{
+      modalImage.src=button.dataset.certificate;
+      modalImage.alt=button.querySelector('img')?.alt||'Certificate preview';
+      modal.hidden=false;
+      document.body.style.overflow='hidden';
+    });
+  });
+  modal.querySelector('.certificate-modal-close').addEventListener('click',closeModal);
+  modal.addEventListener('click',e=>{if(e.target===modal) closeModal();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden) closeModal();});
+}
