@@ -16,9 +16,10 @@
       <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#skills">Skills</a>
       <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#experience">Experience</a>
       <a class="nav-link" href="#education">Education</a>
-      <a class="nav-link" href="blog.html">Learning Blog</a>
-      <a class="nav-link" href="#certifications">Certifications</a>
+      <a class="nav-link" href="#certifications">Certificates</a>
+      <a class="nav-link" href="blog.html">Blog</a>
       <a class="nav-link" href="#contact">Contact</a>
     </nav>
   </header>
@@ -56,25 +57,32 @@
       </div>
     </section>
 
-    <section id="about" class="section split">
-      <div>
+    <section id="about" class="section about-section">
+      <div class="about-heading">
         <p class="section-label">01 / ABOUT</p>
         <h2>Curious about technology,<br>focused on building.</h2>
       </div>
-      <div class="section-copy">
-        <p>I'm Devi Sri Kagga, a third-year B.Tech student in Computer Science and Business Systems at Sagi Ramakrishnam Raju Engineering College.</p>
-        <p>My current foundation is in programming, web development, databases, and DSA. I'm also exploring AI/ML and modern development technologies through hands-on projects.</p>
+      <div class="about-content">
+        <p>I'm Devi Sri Kagga, a B.Tech student in Computer Science and Business Systems at Sagi Ramakrishnam Raju Engineering College.</p>
+        <p>My foundation is in programming, web development, databases, and DSA. I enjoy turning what I learn into practical projects and continuously exploring modern development technologies.</p>
+        <div class="about-highlights">
+          <div><span>01</span><strong>Build</strong><p>Practical software projects</p></div>
+          <div><span>02</span><strong>Practice</strong><p>DSA with Python</p></div>
+          <div><span>03</span><strong>Explore</strong><p>AI/ML & data solutions</p></div>
+        </div>
       </div>
     </section>
 
     <section id="skills" class="section">
       <p class="section-label">02 / SKILLS</p>
-      <h2>Tools I'm learning & using.</h2>
+      <h2>My current toolkit.</h2>
       <div class="skills-grid">
         <div class="skill"><span>01</span><h3>Programming</h3><p>Python · Java · C · DSA</p></div>
-        <div class="skill"><span>02</span><h3>Web</h3><p>HTML · CSS · React</p></div>
-        <div class="skill"><span>03</span><h3>Data</h3><p>DBMS · Business Intelligence</p></div>
-        <div class="skill"><span>04</span><h3>Exploring</h3><p>AI/ML · RAG · Docker</p></div>
+        <div class="skill"><span>02</span><h3>Frontend</h3><p>HTML · CSS · React</p></div>
+        <div class="skill"><span>03</span><h3>Backend</h3><p>Node.js · Express.js · Flask</p></div>
+        <div class="skill"><span>04</span><h3>Database</h3><p>MySQL · SQL · DBMS</p></div>
+        <div class="skill"><span>05</span><h3>Data & AI</h3><p>Machine Learning · Business Intelligence · RAG</p></div>
+        <div class="skill"><span>06</span><h3>Tools</h3><p>Git · GitHub · Docker · Postman · VS Code</p></div>
       </div>
     </section>
 
@@ -84,48 +92,115 @@
       <div class="projects-grid">
         <article class="project featured">
           <div class="project-top"><span>01</span><span>FULL-STACK</span></div>
+          <div class="project-icon">CC</div>
           <h3>Campus Connect Hub</h3>
-          <p>A campus collaboration platform with authentication, dashboards, study groups, notes, and profiles.</p>
+          <p>A campus collaboration platform with authentication, dashboards, study groups, notes, events, academic Q&A, mentor sessions, and an admin dashboard.</p>
           <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>JWT</span></div>
           <div class="project-links"><a href="https://github.com/Devisri-2409/Campus-Connect-Hub" target="_blank" rel="noopener">GitHub ↗</a><a href="https://campus-connect-hub-theta.vercel.app" target="_blank" rel="noopener">Live Demo ↗</a></div>
         </article>
         <article class="project">
           <div class="project-top"><span>02</span><span>ML</span></div>
+          <div class="project-icon">OC</div>
           <h3>OptiCrop</h3>
-          <p>A Flask-based machine-learning application for crop recommendation.</p>
-          <div class="tags"><span>Python</span><span>Flask</span><span>ML</span></div>
+          <p>A Flask-based machine-learning application that recommends crops using soil and environmental inputs such as N, P, K, temperature, humidity, pH, and rainfall.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>Machine Learning</span></div>
           <div class="project-links"><a href="https://github.com/Devisri-2409/OptiCrop" target="_blank" rel="noopener">GitHub ↗</a></div>
         </article>
         <article class="project">
           <div class="project-top"><span>03</span><span>BI</span></div>
+          <div class="project-icon">BI</div>
           <h3>Retail Business Intelligence Dashboard</h3>
-          <p>An interactive Streamlit dashboard focused on retail analytics and OLAP-style insights.</p>
-          <div class="tags"><span>Python</span><span>Streamlit</span><span>OLAP</span></div>
+          <p>An interactive Streamlit dashboard for retail analytics with KPI views, filters, P&L analysis, and OLAP-style insights.</p>
+          <div class="tags"><span>Python</span><span>Streamlit</span><span>MySQL</span><span>OLAP</span></div>
           <div class="project-links"><a href="https://github.com/Devisri-2409/Retail-Business-Intelligence-Dashboard" target="_blank" rel="noopener">GitHub ↗</a></div>
         </article>
       </div>
     </section>
 
+    <section id="experience" class="section split">
+      <div>
+        <p class="section-label">04 / EXPERIENCE</p>
+        <h2>Learning through hands-on work.</h2>
+      </div>
+      <div class="experience-card">
+        <div class="experience-top"><span>2026</span><span>INTERNSHIP</span></div>
+        <h3>Full Stack Vibe Coding Intern — Swecha</h3>
+        <p class="experience-company">Swecha</p>
+        <ul>
+          <li>Worked on full-stack development through a hands-on Vibe Coding internship.</li>
+          <li>Built <strong>Study Group Finder</strong> as a team project to help students discover and connect with study groups.</li>
+          <li>Gained practical experience with <strong>Docker</strong>, Git/GitHub, and modern development workflows.</li>
+          <li>Collaborated with team members on development, debugging, and implementation.</li>
+        </ul>
+      </div>
+    </section>
+
     <section id="education" class="section split">
-      <div><p class="section-label">04 / EDUCATION</p><h2>Learning with purpose.</h2></div>
-      <div class="timeline"><div><span>2025 — 2028</span><h3>B.Tech — Computer Science & Business Systems</h3><p>Sagi Ramakrishnam Raju Engineering College (SRKR)</p></div><div><span>Current</span><h3>Third Year</h3><p>Building skills across software development, DSA, databases, and emerging technologies.</p></div></div>
+      <div><p class="section-label">05 / EDUCATION</p><h2>Learning with purpose.</h2></div>
+      <div class="timeline">
+        <div><span>2024 — 2028</span><h3>B.Tech — Computer Science & Business Systems</h3><p>Sagi Ramakrishnam Raju Engineering College (SRKR)</p></div>
+        <div><span>Current</span><h3>Third Year</h3><p>Building skills across software development, DSA, databases, and emerging technologies.</p></div>
+      </div>
     </section>
 
     <section id="certifications" class="section">
-      <p class="section-label">05 / CERTIFICATIONS & ACTIVITIES</p>
+      <p class="section-label">06 / CERTIFICATES</p>
       <h2>Learning beyond the classroom.</h2>
       <div class="cert-grid">
-        <div><h3>EduSkills</h3><p>Virtual internship learning across Java Full Stack, Data Science, and SQL Databases.</p></div>
-        <div><h3>Cisco</h3><p>Python Essentials 1 & 2 · C Essentials 1 & 2</p></div>
-        <div><h3>Git & GitHub</h3><p>Workshop experience with version control and collaborative development.</p></div>
+        <article class="cert-card">
+          <span class="cert-type">EDUSKILLS</span>
+          <h3>Virtual Internship Programs</h3>
+          <p>Learning experience across Java Full Stack, Data Science, and SQL Databases through virtual internship programs.</p>
+          <span class="cert-year">Virtual Internship Learning</span>
+        </article>
+        <article class="cert-card">
+          <span class="cert-type">CISCO</span>
+          <h3>Python & C Essentials</h3>
+          <p>Python Essentials 1 & 2 and C Essentials 1 & 2 learning credentials.</p>
+          <span class="cert-year">Programming Foundations</span>
+        </article>
+        <article class="cert-card">
+          <span class="cert-type">WORKSHOP</span>
+          <h3>Git & GitHub Workshop</h3>
+          <p>Hands-on workshop experience with Git, GitHub commands, repositories, and version-control workflows.</p>
+          <span class="cert-year">SRKR Engineering College</span>
+        </article>
+        <article class="cert-card">
+          <span class="cert-type">GOOGLE SKILLS</span>
+          <h3>Digital Badges</h3>
+          <p>Public learning profile containing badges earned through learning and virtual internship activities.</p>
+          <a class="cert-link" href="https://skills.google/public_profiles/86161f92-d97b-46c5-99a8-85c47dbe27fb" target="_blank" rel="noopener">View Badge Profile ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="activities" class="section activities-section">
+      <p class="section-label">07 / ACTIVITIES & LEARNING</p>
+      <h2>Always learning, always practicing.</h2>
+      <div class="activity-grid">
+        <div class="activity"><span>01</span><h3>DSA Practice</h3><p>Regularly practicing Data Structures and Algorithms using Python to strengthen problem-solving and coding skills.</p></div>
+        <div class="activity"><span>02</span><h3>Smart India Hackathon</h3><p>Participated in Smart India Hackathon and explored collaborative problem-solving through a team-based project.</p></div>
+        <div class="activity"><span>03</span><h3>Competitive Programming</h3><p>Participated in coding contests and continued improving problem-solving through practice.</p></div>
+        <div class="activity"><span>04</span><h3>Continuous Learning</h3><p>Exploring full-stack development, AI/ML, data analytics, and modern developer tools through projects.</p></div>
+      </div>
+    </section>
+
+    <section id="blog-preview" class="section blog-preview">
+      <div class="blog-preview-head">
+        <div><p class="section-label">08 / LEARNING BLOG</p><h2>What I'm learning.</h2></div>
+        <a class="inline-link" href="blog.html">View all notes ↗</a>
+      </div>
+      <div class="blog-mini-grid">
+        <a href="blog.html" class="blog-mini"><span>DAY 01</span><h3>Numbers & Percentages</h3><p>Building aptitude fundamentals step by step.</p></a>
+        <a href="blog.html" class="blog-mini"><span>DAY 02</span><h3>Profit, Discount & Ratio</h3><p>Turning formulas into problem-solving skills.</p></a>
       </div>
     </section>
 
     <section id="contact" class="contact section">
-      <p class="section-label">06 / CONTACT</p>
+      <p class="section-label">09 / CONTACT</p>
       <h2>Let's connect.</h2>
       <p>Interested in projects, learning opportunities, or technology discussions? Find me online.</p>
-      <div class="actions"><a class="btn primary" href="https://github.com/Devisri-2409" target="_blank" rel="noopener">GitHub ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/devi-sri-kagga-a2566370" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+      <div class="actions"><a class="btn primary" href="https://github.com/Devisri-2409" target="_blank" rel="noopener">GitHub ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/devi-sri-kagga-a25665370" target="_blank" rel="noopener">LinkedIn ↗</a></div>
     </section>
   </main>
 
