@@ -54,3 +54,24 @@
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal-ready .reveal{opacity:1;transform:none}
 }
+
+
+/* Chronological EduSkills internship timeline */
+.internship-timeline{position:relative;display:grid;gap:16px;margin:8px 0 38px;padding-left:28px}
+.internship-timeline::before{content:"";position:absolute;left:8px;top:18px;bottom:18px;width:1px;background:linear-gradient(#49e39a,#24503f)}
+.internship-card{position:relative;display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;padding:24px;border:1px solid #1c3a30;border-radius:14px;background:linear-gradient(120deg,#0b1d16,#0a1712);transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.internship-card::before{content:"";position:absolute;left:-26px;top:30px;width:9px;height:9px;border:2px solid #07100d;border-radius:50%;background:#49e39a;box-shadow:0 0 0 3px #24503f}
+.internship-card:hover{transform:translateY(-3px);border-color:#34765b;box-shadow:0 14px 35px rgba(0,0,0,.16)}
+.internship-date{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding-top:3px;color:#49e39a}
+.internship-date span{font-size:.72rem;font-weight:800;letter-spacing:.12em}
+.internship-date strong{font-size:1.7rem;line-height:1.2;letter-spacing:-.04em}
+.internship-details h3{font-size:1.3rem;margin:8px 0}
+.internship-details p{max-width:850px;color:#a7b8b0;font-size:.95rem;margin-bottom:18px}
+.internship-details .tags{margin-top:0}
+@media(max-width:600px){
+  .internship-timeline{padding-left:22px}
+  .internship-card{grid-template-columns:1fr;gap:12px;padding:20px}
+  .internship-card::before{left:-20px;top:25px}
+  .internship-date{flex-direction:row;align-items:baseline;gap:10px}
+  .internship-date strong{font-size:1.35rem}
+}
