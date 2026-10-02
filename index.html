@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="navbar">
     <a class="brand" href="#home" aria-label="Devi Sri home">DS<span>.</span></a>
     <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">☰</button>
@@ -29,7 +30,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section id="home" class="hero">
       <div class="hero-content">
         <p class="eyebrow"><span class="eyebrow-dot"></span> B.Tech CSBS • SRKR Engineering College</p>
@@ -159,13 +160,45 @@
     <section id="certifications" class="section">
       <p class="section-label">06 / CERTIFICATES</p>
       <h2>Learning beyond the classroom.</h2>
-      <div class="cert-grid">
-        <article class="cert-card">
-          <span class="cert-type">EDUSKILLS</span>
-          <h3>Virtual Internship Programs</h3>
-          <p>Learning experience across Java Full Stack, Data Science, and SQL Databases through virtual internship programs.</p>
-          <span class="cert-year">Virtual Internship Learning</span>
+      <div class="internship-timeline" aria-label="EduSkills virtual internships in chronological order">
+        <article class="internship-card">
+          <div class="internship-date"><span>OCT — DEC</span><strong>2025</strong></div>
+          <div class="internship-details">
+            <span class="cert-type">EDUSKILLS · VIRTUAL INTERNSHIP</span>
+            <h3>Java Full Stack Developer</h3>
+            <p>Built a foundation in full-stack application development, including Java-based programming and the concepts used to connect application interfaces, server-side logic, and databases.</p>
+            <div class="tags"><span>Java</span><span>Full Stack</span><span>Application Development</span></div>
+          </div>
         </article>
+        <article class="internship-card">
+          <div class="internship-date"><span>JAN — MAR</span><strong>2026</strong></div>
+          <div class="internship-details">
+            <span class="cert-type">EDUSKILLS · SUPPORTED BY GOOGLE CLOUD</span>
+            <h3>Generative AI Virtual Internship</h3>
+            <p>Explored generative AI concepts and their practical applications, building familiarity with how AI-powered systems can support real-world tasks.</p>
+            <div class="tags"><span>Generative AI</span><span>AI Applications</span></div>
+          </div>
+        </article>
+        <article class="internship-card">
+          <div class="internship-date"><span>APR — JUN</span><strong>2026</strong></div>
+          <div class="internship-details">
+            <span class="cert-type">EDUSKILLS · SUPPORTED BY SIEMENS</span>
+            <h3>Data Science Master Virtual Internship</h3>
+            <p>Developed familiarity with data science workflows, including data analysis, interpretation, and machine-learning concepts used to derive insights from data.</p>
+            <div class="tags"><span>Data Science</span><span>Data Analysis</span><span>Machine Learning</span></div>
+          </div>
+        </article>
+        <article class="internship-card">
+          <div class="internship-date"><span>JUN — AUG</span><strong>2026</strong></div>
+          <div class="internship-details">
+            <span class="cert-type">EDUSKILLS · VIRTUAL INTERNSHIP WITH PROJECT</span>
+            <h3>SQL and Database Management Systems</h3>
+            <p>Practiced working with relational databases and SQL, focusing on querying, database concepts, and applying database skills through a project.</p>
+            <div class="tags"><span>SQL</span><span>DBMS</span><span>Database Project</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="cert-grid">
         <article class="cert-card">
           <span class="cert-type">CISCO</span>
           <h3>Python & C Essentials</h3>
