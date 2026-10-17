@@ -158,7 +158,12 @@
         status.textContent = optionIndex === item.answer ? "✓ Correct answer" : userAnswer === optionIndex ? "✕ Your answer" : "Option " + String.fromCharCode(65 + optionIndex);
         const body = document.createElement("span");
         body.textContent = option;
-        line.append(status, body);
+        const reason = document.createElement("p");
+        reason.className = "option-reason";
+        reason.textContent = optionIndex === item.answer
+          ? "Why this is correct: " + item.explanation
+          : "Why this is incorrect: This choice does not satisfy the key requirement in the question. " + item.explanation;
+        line.append(status, body, reason);
         card.appendChild(line);
       });
       const explain = document.createElement("p");
