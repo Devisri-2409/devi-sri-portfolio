@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A timed, exam-oriented Introduction to IoT mock test for NPTEL preparation.">
+  <meta name="theme-color" content="#07100d">
+  <title>IoT Mock Test | Devi Sri</title>
+  <link rel="stylesheet" href="iot-quiz.css">
+</head>
+<body>
+  <header class="quiz-nav">
+    <a class="brand" href="index.html" aria-label="Back to Devi Sri portfolio">DS<span>.</span></a>
+    <a class="back-link" href="index.html">← Back to portfolio</a>
+  </header>
+  <main class="quiz-shell">
+    <section class="intro-card" id="intro">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> NPTEL · INTRODUCTION TO IoT</p>
+      <h1>IoT Mock Test</h1>
+      <p class="lead">Practice concepts, calculations, and real-world scenarios inspired by the topics you've studied so far.</p>
+      <div class="stats">
+        <div><strong>100</strong><span>MCQs</span></div>
+        <div><strong>120 min</strong><span>Overall timer</span></div>
+        <div><strong>4 options</strong><span>Per question</span></div>
+      </div>
+      <ul class="instructions">
+        <li>Questions cover IoT fundamentals, communication, sensors, Arduino/Raspberry Pi, WSNs, SDN, and data analytics.</li>
+        <li>Your timer starts when you begin and the test submits automatically at zero.</li>
+        <li>After submission, review the correct answer and feedback for every option.</li>
+        <li>This is a practice set, not an official NPTEL paper. No answers are revealed before submission.</li>
+      </ul>
+      <button class="btn primary" id="start-btn">Start mock test <span>→</span></button>
+    </section>
+
+    <section class="test-layout hidden" id="test" aria-label="IoT mock test">
+      <div class="test-main">
+        <div class="test-top">
+          <div><span class="eyebrow">QUESTION</span><h2 id="question-count">1 of 100</h2></div>
+          <div class="timer" id="timer" role="timer" aria-live="polite">120:00</div>
+        </div>
+        <div class="progress-track"><div id="progress-bar"></div></div>
+        <div class="question-card">
+          <p class="topic-label" id="topic-label">IoT Fundamentals</p>
+          <h3 id="question-text"></h3>
+          <div class="options" id="options"></div>
+        </div>
+        <div class="question-actions">
+          <button class="btn secondary" id="prev-btn">← Previous</button>
+          <button class="btn primary" id="next-btn">Next →</button>
+        </div>
+      </div>
+      <aside class="question-sidebar">
+        <h3>Question navigator</h3>
+        <p class="muted">Choose a number to jump to a question.</p>
+        <div class="question-grid" id="question-grid" aria-label="Question navigation"></div>
+        <div class="legend"><span><i class="legend-answered"></i> Answered</span><span><i class="legend-current"></i> Current</span></div>
+        <p class="answered-count" id="answered-count">0 of 100 answered</p>
+        <button class="btn submit-btn" id="submit-btn">Submit test</button>
+      </aside>
+    </section>
+
+    <section class="results hidden" id="results" aria-live="polite">
+      <p class="eyebrow">TEST COMPLETE</p>
+      <h1 id="result-title">Your results</h1>
+      <p class="lead" id="result-summary"></p>
+      <div class="result-stats">
+        <div><span>Score</span><strong id="score-value">0 / 100</strong></div>
+        <div><span>Percentage</span><strong id="percentage-value">0%</strong></div>
+        <div><span>Answered</span><strong id="answered-value">0 / 100</strong></div>
+        <div><span>Time used</span><strong id="time-value">00:00</strong></div>
+      </div>
+      <div class="review-heading"><div><p class="eyebrow">ANSWER REVIEW</p><h2>Learn from every option.</h2></div><button class="btn secondary" id="retake-btn">Retake test ↻</button></div>
+      <div id="review-list" class="review-list"></div>
+      <a class="back-link bottom-back" href="index.html">← Return to portfolio</a>
+    </section>
+  </main>
+  <footer><p>© 2026 Devi Sri Kagga · NPTEL IoT practice</p></footer>
+  <script src="iot-quiz.js"></script>
+</body>
+</html>
